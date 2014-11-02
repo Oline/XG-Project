@@ -1,9 +1,10 @@
 <?php
 
 /**
- * @project XG Proyect
- * @version 3.x.x build 0000
- * @copyright Copyright (C) 2008 - 2014
+ * @package	XG Project
+ * @copyright	Copyright (c) 2008 - 2014
+ * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since	Version 3.0.0
  */
 
 class Options extends XGPCore
@@ -143,7 +144,7 @@ class Options extends XGPCore
 			{
 				$settings_wri = '0';
 			}
-			// < --------------------------------------------- AÑADIR A LISTA DE AMIGOS ------------------------------------------------ >
+			// < --------------------------------------------- A?ADIR A LISTA DE AMIGOS ------------------------------------------------ >
 			if (isset($_POST['settings_bud']) && $_POST['settings_bud'] == 'on')
 			{
 				$settings_bud = '1';

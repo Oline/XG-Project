@@ -1,9 +1,10 @@
 <?php
 
 /**
- * @project XG Proyect
- * @version 3.x.x build 0000
- * @copyright Copyright (C) 2008 - 2014
+ * @package	XG Project
+ * @copyright	Copyright (c) 2008 - 2014
+ * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since	Version 3.0.0
  */
 
 if ( ! defined ( 'INSIDE' ) ) { die ( header ( 'location:../../' ) ) ; }
@@ -100,7 +101,7 @@ class Infos extends XGPCore
             $PageTPL	= parent::$page->get_template ('infos/info_officiers_general');
         }
 
-        //Sólo hay destroy en <200
+        //S?lo hay destroy en <200
         if($this->_element_id < 200 && $this->_element_id != 33 && $this->_element_id != 41)
         {
 	        $DestroyTPL           = parent::$page->get_template ('infos/info_buildings_destroy');

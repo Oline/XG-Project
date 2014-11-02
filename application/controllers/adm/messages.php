@@ -1,9 +1,10 @@
 <?php
 
 /**
- * @project XG Proyect
- * @version 3.x.x build 0000
- * @copyright Copyright (C) 2008 - 2014
+ * @package	XG Project
+ * @copyright	Copyright (c) 2008 - 2014
+ * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since	Version 3.0.0
  */
 
 if ( ! defined ( 'INSIDE' ) ) { die ( header ( 'location:../../' ) ) ; }
@@ -275,7 +276,7 @@ class Messages extends XGPCore
 	{
 		$year_combo	= '';
 
-		for ( $year = date ( 'Y' ) ; $year >= 2008 ; $year-- ) // 2008 the year XG Proyect started :)
+		for ( $year = date ( 'Y' ) ; $year >= 2008 ; $year-- ) // 2008 the year XG Project started :)
 		{
 			$year_combo	.= '<option value="' . $year . '">' . $year . '</option>';
 		}

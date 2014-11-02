@@ -2,7 +2,7 @@
 
 // index
 $lang['hm_keywords']						= 'Juego, navegador, online, gratis, legendario, MMOG, ciencia ficción, espacio, nave';
-$lang['hm_description']						= 'XG Proyect - ¡El juego legendario en el espacio! Descubre un universo junto con miles de jugadores.';
+$lang['hm_description']						= 'XG Project - ¡El juego legendario en el espacio! Descubre un universo junto con miles de jugadores.';
 $lang['hm_field_required']					= 'Se requiere este campo';
 $lang['hm_must_accept_tandc']				= 'Tienes que aceptar los T&Cs.';
 $lang['hm_username_length']					= 'Se permiten entre 3 y 20 caracteres.';
@@ -19,7 +19,7 @@ $lang['hm_username_available']				= 'Este nombre de usuario est\u00e1 disponible
 $lang['hm_username_loading']				= 'Cargando... Por favor, espera';
 $lang['hm_username_not_available']			= 'Este nombre de usuario ya no est\u00e1 disponible.';
 $lang['hm_only_characters']					= 'Utilizar s\u00f3lo caracteres.';
-$lang['hm_hidden_title']					= 'XGProyect - Conquista el universo';
+$lang['hm_hidden_title']					= 'XGProject - Conquista el universo';
 $lang['hm_login_button']					= 'Entrar';
 $lang['hm_close_button']					= 'Cerrar';
 $lang['hm_universe']						= 'Universo:';
@@ -41,14 +41,14 @@ $lang['hm_media']							= 'Media';
 $lang['hm_forum']							= 'Foro';
 
 // ajax - home
-$lang['aj_home_conquer_universe']			= 'XG Proyect - Conquista el universo';
-$lang['aj_home_description']				= '<em>XG Proyect</em> es un juego de estrategia localizado en el espacio. Miles de jugadores por todo el mundo compiten al mismo tiempo. Para jugar sólo necesitas un navegador web.';
+$lang['aj_home_conquer_universe']			= 'XG Project - Conquista el universo';
+$lang['aj_home_description']				= '<em>XG Project</em> es un juego de estrategia localizado en el espacio. Miles de jugadores por todo el mundo compiten al mismo tiempo. Para jugar sólo necesitas un navegador web.';
 $lang['aj_home_rules']						= 'Reglas';
 $lang['aj_home_trailer']					= 'Trailer';
 
 // ajax - about
-$lang['aj_info_about_title']				= 'XG Proyect es un juego de conquista intergaláctica.';
-$lang['aj_info_about_description']			= '<em>XG Proyect</em> es un juego de estrategia localizado en el espacio. Miles de jugadores por todo el mundo compiten al mismo tiempo. Para jugar sólo necesitas un navegador web.';
+$lang['aj_info_about_title']				= 'XG Project es un juego de conquista intergaláctica.';
+$lang['aj_info_about_description']			= '<em>XG Project</em> es un juego de estrategia localizado en el espacio. Miles de jugadores por todo el mundo compiten al mismo tiempo. Para jugar sólo necesitas un navegador web.';
 $lang['aj_info_features']					= 'Características';
 $lang['aj_info_description_line1']			= 'Empiezas con un mundo por desarrollar que se convertirá en un <em>poderoso imperio</em> capaz de defender tus colonias conquistadas con gran esfuerzo.';
 $lang['aj_info_description_line2']			= 'Crea una <em>infraestructura económica y militar</em> para ayudarte en tu misión hacia el siguiente y mayor avance tecnológico.';
@@ -56,7 +56,7 @@ $lang['aj_info_description_line3']			= '<em>Dirige guerras</em> contra otros imp
 $lang['aj_info_description_line4']			= '<em>Negocia</em> con otros emperadores y crea una alianza o comercia esos recursos que tanto necesitas.';
 $lang['aj_info_description_line5']			= '<em>Construye una armada</em> para garantizar que se cumple tu voluntad en todo el universo.';
 $lang['aj_info_description_line6']			= '<em>Protege tus recursos</em> tras un muro de defensas planetarias impenetrable.';
-$lang['aj_info_description_line7']			= '<em>XG Proyect</em> te ofrece <em>posibilidades infinitas.</em>';
+$lang['aj_info_description_line7']			= '<em>XG Project</em> te ofrece <em>posibilidades infinitas.</em>';
 $lang['aj_info_description_line8']			= '¿Sembrarás el terror allá por donde vayas? ¿O harás temblar de miedo a aquellos que osen atacar al indefenso?';
 $lang['aj_info_team']						= 'Equipo';
 $lang['aj_info_credits']					= 'Créditos';
@@ -69,19 +69,19 @@ $lang['aj_media_concept_art']				= 'Arte conceptual';
 
 // registration
 $lang['re_disabled']						= 'En estos momentos el registro a nuevos usuarios se encuentra cerrado.';
-$lang['re_mail_text_part1']					= '¡Bienvenido a XG Proyect, gracias por unirte en nuestro juego!<br/> En este email encontrarás toda la información que necesitarás para acceder a tu cuenta';
+$lang['re_mail_text_part1']					= '¡Bienvenido a XG Project, gracias por unirte en nuestro juego!<br/> En este email encontrarás toda la información que necesitarás para acceder a tu cuenta';
 $lang['re_mail_text_part2']					= '<strong>Datos de acceso al juego</strong>';
 $lang['re_mail_text_part3']					= 'Tu nombre de usuario';
 $lang['re_mail_text_part4']					= 'Tu clave';
 $lang['re_mail_text_part5']					= 'Enlace al juego';
 $lang['re_mail_text_part6']					= '&iexcl;Disfrut&aacute; del juego!';
 $lang['re_mail_text_part7']					= 'Atentamente,<br/>El equipo de XGP.-';
-$lang['re_mail_register_at']				= 'Registro en XG Proyect';
+$lang['re_mail_register_at']				= 'Registro en XG Project';
 
 // message for new users
 $lang['re_welcome_message_from']			= 'Admin';
-$lang['re_welcome_message_subject']			= '¡Te damos la bienvenida a XGProyect!';
-$lang['re_welcome_message_content']			= 'Hola %s - ¡Bienvenido a XGProyect!
+$lang['re_welcome_message_subject']			= '¡Te damos la bienvenida a XG Project!';
+$lang['re_welcome_message_content']			= 'Hola %s - ¡Bienvenido a XG Project!
 <br/><br/>
 Al principio empieza por construir una mina de metal.<br/>
 Para hacer esto haz click en el enlace "Recursos" de la izquierda, selecciona la mina de metal, y haz click en "Construir".<br/>

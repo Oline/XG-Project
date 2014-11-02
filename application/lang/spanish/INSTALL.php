@@ -1,9 +1,9 @@
 <?php
 
 // SOME MESSAGES
-$lang['404_error']					= 'La p&aacute;gina solicitada no existe';
-$lang['ins_no_server_requirements']	= 'Tu servidor/hosting no cumple con los requisitos m&iacute;nimos que requiere XG Proyect para funcionar.<br /><br />Requisitos: <br />- PHP 5.2.0<br />- MySQL 5.0.19';
-$lang['ins_already_installed']		= 'XG Proyect ya se encuentra instalado. Selecciona una opci&oacute;n: <br /><br /> - <a href="index.php?page=update">Actualizar</a> <br /> - <a href="index.php?page=migrate">Migrar</a> <br /> - <a href="../">Volver al juego</a> <br /><br />En el caso de que no desees realizar ninguna acci&oacute;n, por seguridad, te recomendamos <span style="color:red;text-decoration:underline;">BORRAR</span> el directorio install.';
+$lang['404_error']					= 'La página solicitada no existe';
+$lang['ins_no_server_requirements']	= 'Tu servidor/hosting no cumple con los requisitos mínimos que requiere XG Project para funcionar.<br /><br />Requisitos: <br />- PHP 5.2.0<br />- MySQL 5.0.19';
+$lang['ins_already_installed']		= 'XG Project ya se encuentra instalado. Selecciona una opción: <br /><br /> - <a href="index.php?page=update">Actualizar</a> <br /> - <a href="index.php?page=migrate">Migrar</a> <br /> - <a href="../">Volver al juego</a> <br /><br />En el caso de que no desees realizar ninguna acción, por seguridad, te recomendamos <span style="color:red;text-decoration:underline;">BORRAR</span> el directorio install.';
 $lang['ins_missing_xml_file']		= 'No se puede encontrar el archivo config.xml ni el archivo config.xml.cfg, debes tener alguno de estos para poder continuar con la instalación. Revisa tu directorio application/config y los permisos del mismo deben estar en chmod 777';
 
 // SOME ERROR HEADERS
@@ -22,10 +22,10 @@ $lang['ins_language_select']		= 'Seleccionar idioma';
 
 // OVERVIEW PAGE
 $lang['ins_title']					= 'Introducci&oacute;n';
-$lang['ins_welcome']				= '&iexcl;Bienvenido a XG Proyect!';
-$lang['ins_welcome_first_line']		= 'XG Proyect es uno de los mejores clones de OGame existentes hasta el momento. XG Proyect 3 es el &uacute;ltimo y m&aacute;s estable paquete nunca antes desarrollado. Tal cual como las otras versiones, XG Proyect recibe soporte del equipo antes conocido como Xtreme-gameZ, asegur&aacute;ndonos siempre de lograr la mejor calidad en atenci&oacute;n y la estabilidad de la versi&oacute;n. XG Proyect 3 d&iacute;a a d&iacute;a busca; crecimiento, estabilidad, flexibilidad, dinamismo, calidad y la confianza del usuario en que es su mejor opci&oacute;n y elecci&oacute;n. Siempre esperamos que XG Proyect sea mejor que sus expectativas.';
+$lang['ins_welcome']				= '¡Bienvenido a XG Project!';
+$lang['ins_welcome_first_line']		= 'XG Project es uno de los mejores clones de OGame existentes hasta el momento. XG Project 3 es el último y más estable paquete nunca antes desarrollado. Tal cual como las otras versiones, XG Project recibe soporte del equipo antes conocido como Xtreme-gameZ, asegurándonos siempre de lograr la mejor calidad en atención y la estabilidad de la versión. XG Project 3 día a día busca; crecimiento, estabilidad, flexibilidad, dinamismo, calidad y la confianza del usuario en que es su mejor opción y elección. Siempre esperamos que XG Project sea mejor que sus expectativas.';
 $lang['ins_welcome_second_line']	= 'El sistema de instalaci&oacute;n te guiar&aacute; a trav&eacute;s de la instalaci&oacute;n del mismo, o la actualizaci&oacute;n de una versi&oacute;n anterior a la m&aacute;s reciente. Cualquier duda, problema o consulta no dudes en consulta nuestra <a href="http://www.xgproyect.net/"><em>comunidad de desarrollo y soporte</em></a>.';
-$lang['ins_welcome_third_line']		= 'XG Proyect es un proyecto OpenSource (c&oacute;digo abierto), para ver las especificaciones de la licencia haz click en licencia en la barra superior. Para comenzar la instalaci&oacute;n haz click en el bot&oacute;n instalar o para actualizar a la versi&oacute;n m&aacute;s nueva haz click en el bot&oacute;n actualizar.';
+$lang['ins_welcome_third_line']		= 'XG Project es un proyecto OpenSource (código abierto), para ver las especificaciones de la licencia haz click en licencia en la barra superior. Para comenzar la instalaci&oacute;n haz click en el bot&oacute;n instalar o para actualizar a la versi&oacute;n m&aacute;s nueva haz click en el bot&oacute;n actualizar.';
 $lang['ins_install_license']		= 'Licencia';
 
 // INSTALL PAGE

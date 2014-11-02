@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="language" content="es">
-    <meta name="author" content="XG Proyect">
-    <meta name="publisher" content="XG Proyect">
-    <meta name="copyright" content="XG Proyect">
+    <meta name="author" content="XG Project">
+    <meta name="publisher" content="XG Project">
+    <meta name="copyright" content="XG Project">
     <meta name="audience" content="all">
     <meta name="Expires" content="never">
     <meta name="Keywords" content="{hm_keywords}">
@@ -21,7 +21,7 @@
     <script type="text/javascript" src="{js_path}jquery.jparallax.js"></script>
     <script type="text/javascript" src="{js_path}jquery.fancybox-1.3.1.pack.js"></script>
     <script type="text/javascript" src="{js_path}jquery.validationEngine.modified.js"></script>
-    <script type="text/javascript" src="{js_path}xgproyect.js"></script>
+    <script type="text/javascript" src="{js_path}xgproject.js"></script>
     <script type="text/javascript" src="{js_path}test.js"></script>
     <script type="text/javascript">
         // <![CDATA[
@@ -267,7 +267,7 @@
 	</div>
 	<div id="footer">
 	    <div id="footerContent">
-            <p id="copyright">Powered by <a href="http://xgproyect.net/" target="_blank" title="XG Proyect {version}">XG Proyect</a> © 2008 - {year}.</p>
+            <p id="copyright">Powered by <a href="https://github.com/Razican/XG-Project" target="_blank" title="XG Project {version}">XG Project</a> © 2008 - {year}.</p>
         </div>
 	</div>
 
@@ -279,8 +279,8 @@
 
     </script>
 
-<script type="text/javascript" src="{js_path}xgproyect.js"></script>
-<script type="text/javascript" src="{js_path}xgproyect.start.js"></script>
+<script type="text/javascript" src="{js_path}xgproject.js"></script>
+<script type="text/javascript" src="{js_path}xgproject.start.js"></script>
 
 
 

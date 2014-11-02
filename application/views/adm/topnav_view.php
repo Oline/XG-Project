@@ -6,7 +6,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </a>
-	          <a class="brand">XG Proyect</a>
+	          <a class="brand">XG Project</a>
 	          <div class="nav-collapse collapse">
 	            <p class="navbar-text pull-right">
 	              {tn_loggued_in_as} <a href="#" class="navbar-link">{username}</a>

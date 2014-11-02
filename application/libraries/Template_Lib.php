@@ -1,9 +1,10 @@
 <?php
 
 /**
- * @project XG Proyect
- * @version 3.x.x build 0000
- * @copyright Copyright (C) 2008 - 2014
+ * @package	XG Project
+ * @copyright	Copyright (c) 2008 - 2014
+ * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since	Version 3.0.0
  */
 
 if ( ! defined ( 'INSIDE' ) ) { die ( header ( 'location:../../' ) ) ; }
@@ -255,7 +256,7 @@ class Template_Lib
 		$parse['-title-'] 	 = Functions_Lib::read_config ( 'game_name' );
 		$parse['-favi-']	 = "<link rel=\"shortcut icon\" href=\"" . XGP_ROOT . "favicon.ico\">\n";
 		$parse['-meta-']	 = "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n";
-		$parse['-meta-']	.= "<meta name=\"generator\" content=\"XG Proyect " . VERSION . "\" />\n";
+		$parse['-meta-']	.= "<meta name=\"generator\" content=\"XG Project " . VERSION . "\" />\n";
 		$parse['-style-']  	 = "<link rel=\"stylesheet\" type=\"text/css\" href=\"" . XGP_ROOT . CSS_PATH . "default.css\">\n";
 		$parse['-style-']  	.= "<link rel=\"stylesheet\" type=\"text/css\" href=\"" . XGP_ROOT . CSS_PATH . "formate.css\">\n";
 		$parse['-style-'] 	.= "<link rel=\"stylesheet\" type=\"text/css\" href=\"" . XGP_ROOT . DPATH ."formate.css\" />\n";

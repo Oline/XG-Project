@@ -1,9 +1,10 @@
 <?php
 
 /**
- * @project XG Proyect
- * @version 3.x.x build 0000
- * @copyright Copyright (C) 2008 - 2014
+ * @package	XG Project
+ * @copyright	Copyright (c) 2008 - 2014
+ * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since	Version 3.0.0
  */
 
 if(!defined('INSIDE')){ die(header ( 'location:../../' ));}
@@ -122,7 +123,7 @@ class Debug_Lib extends XGPCore
 					  <style>
 					    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}
 					  </style>
-					  <a href=//www.google.com/><img src="http://www.xgproyect.net/images/misc/xg-logo.png" alt="XG Proyect"></a>
+					  <a href=//www.google.com/><img src="http://www.xgproyect.net/images/misc/xg-logo.png" alt="XG Project"></a>
 					  <p><b>500.</b> <ins>That’s an error.</ins>
 					  <p>The requested URL throw an error. Contact the game Administrator. <ins>That’s all we know.</ins>
 					';

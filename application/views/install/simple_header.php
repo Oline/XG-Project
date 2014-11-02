@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>XG Proyect | {title}</title>
+    <title>XG Project | {title}</title>
 	<link rel="shortcut icon" href="{xgp_root}favicon.ico">
 	<link rel="stylesheet" type="text/css" href="{css_path}bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="{css_path}admin.css">

@@ -36,7 +36,7 @@
 					<td>
 						<div align="center">
 							<font color="#FFFFFF">
-								<a href="#" title="Powered by XG Proyect {version} &copy; 2008 - {year} GNU General Public License">&copy; 2008 - {year}</a>
+								<a href="#" title="Powered by XG Project {version} &copy; 2008 - {year} GNU General Public License">&copy; 2008 - {year}</a>
 							</font>
 						</div>
 					</td>

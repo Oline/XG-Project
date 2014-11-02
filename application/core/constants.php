@@ -1,9 +1,10 @@
 <?php
 
 /**
- * @project XG Proyect
- * @version 3.x.x build 0000
- * @copyright Copyright (C) 2008 - 2014
+ * @package	XG Project
+ * @copyright	Copyright (c) 2008 - 2014
+ * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since	Version 3.0.0
  */
 
 if ( ! defined ( 'INSIDE' ) ) die ( header ( "location:../" ) ) ;
@@ -23,7 +24,7 @@ if ( ! defined ( 'INSIDE' ) ) die ( header ( "location:../" ) ) ;
 	// VISUAL DEFAULT PATHS
 	define('SKIN_PATH'					, 'application/styles/skins/');
 	define('TEMPLATE_DIR'     		 	, 'application/views/');
-	define('DEFAULT_SKINPATH' 		 	, 'application/styles/skins/xgproyect/');
+	define('DEFAULT_SKINPATH' 		 	, 'application/styles/skins/xgproject/');
 	define('JS_PATH'					, 'js/');
 	define('CSS_PATH'					, 'application/styles/css/');
 	define('IMG_PATH'					, 'application/styles/images/' );

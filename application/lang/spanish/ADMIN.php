@@ -55,8 +55,8 @@ $lang['tn_sql_queries']										= 'Consultas SQL';
 $lang['tn_logout']											= 'Salir';
 
 // HOME - INDEX
-$lang['hm_title']											= 'Bienvenido a XG Proyect';
-$lang['hm_welcome_text']									= 'Gracias por elegir XG Proyect. Día a día trabajamos por ser el OGame OpenSource Nº1 de la red. A continuación tienes un "vistazo" general del juego. Podrás realizar todos los cambios que desees navegando por el menú de la izquierda.';
+$lang['hm_title']											= 'Bienvenido a XG Project';
+$lang['hm_welcome_text']									= 'Gracias por elegir XG Project. Día a día trabajamos por ser el OGame OpenSource Nº1 de la red. A continuación tienes un "vistazo" general del juego. Podrás realizar todos los cambios que desees navegando por el menú de la izquierda.';
 $lang['hm_learn_more']										= 'Conoce más';
 $lang['hm_notifications']									= 'Notificaciones';
 $lang['hm_errors']											= '¡Alerta!';
@@ -65,19 +65,19 @@ $lang['hm_ok']												= '¡Ok!';
 $lang['hm_install_file_detected']							= 'Se detecto el directorio install/. Por razones se seguridad recomendamos eliminarlo.';
 $lang['hm_config_file_writable']							= 'El archivo config.php puede ser escrito, es recomendable que sea colocado en chmod 440 (sólo lectura).';
 $lang['hm_database_errors']									= 'Hay errores en tu base de datos. Puedes verlos haciendo <a href="admin.php?page=errors">click aquí</a>';
-$lang['hm_old_version']										= 'Hay una nueva versión disponible. Haz click <a href="http://www.xgproyect.net/downloads/" target="_blank">aquí</a> para descargarla';
+$lang['hm_old_version']										= 'Hay una nueva versión disponible. Haz click <a href="https://github.com/Razican/XG-Project/releases" target="_blank">aquí</a> para descargarla';
 $lang['hm_all_ok']											= 'No hay actualizaciones ni advertencias';
 $lang['hm_bug_report_title']								= 'Reporte de bugs';
-$lang['hm_bug_report_message']								= 'Reporta problemas que encuentres en el juego al equipo de XG Proyect.';
+$lang['hm_bug_report_message']								= 'Reporta problemas que encuentres en el juego al equipo de XG Project.';
 $lang['hm_bug_report_go']									= 'Reportar';
 $lang['hm_game_version_title']								= 'Versión actual';
 $lang['hm_update']											= '¡Actualizar!';
 $lang['hm_game_version_go']									= 'Changelog';
 $lang['hm_license_title']									= 'Licencia';
-$lang['hm_license_message']									= 'La licencia de XG Proyect ayuda a proteger el proyecto y a los desarrolladores del mismo, como así también a todos aquellos que aportan y/o colaboran con el mismo.';
+$lang['hm_license_message']									= 'La licencia de XG Project ayuda a proteger el proyecto y a los desarrolladores del mismo, como así también a todos aquellos que aportan y/o colaboran con el mismo.';
 $lang['hm_license_go']										= 'Ver licencia';
 $lang['hm_credits']											= 'Créditos';
-$lang['hm_proyect_leader']									= 'Project Leader';
+$lang['hm_project_leader']									= 'Líder del proyecto';
 $lang['hm_principal_contributors']							= 'Principales colaboradores';
 
 // PERMISSIONS
