@@ -1,4 +1,8 @@
-'3.0.0' => ' //2013
+'3.0.0' => ' //2015
+
+Cambio del nombre del proyecto a XG Project.
+El desarrollo estará ahora liderado por Razican.
+
 - [Seguridad]
 - Mejorada la seguridad de los archivos.-
 - Mejorada la seguridad de las sesiones/cookies HttpOnly Cookie (By jstar).-
@@ -144,7 +148,7 @@
 #10073: $InLogin no está definido excepto en el login y el registro (By Razican).-
 
 - [Bugs]
-#10250: Corregido un bug que no mostraba la información de los misiles en el info (By Think).- 
+#10250: Corregido un bug que no mostraba la información de los misiles en el info (By Think).-
 #10240: Corregido un bug de cookies que ocurría en algunas circunstancias (By Razican).-
 #10233: Corregido un bug que intentaba mostrar una imagen para un planeta destruido (By Think).-
 #10228: Bug que permitía escribir un tag en la alianza menor a 3 caracteres (By Think).-
@@ -201,7 +205,7 @@
 - El año final del copyright se muestra dinámicamente en el index.-
 - Mejoras internas globales.-
 - Mejoras en la validación del modo vacaciones. Antes realizaba una query + una query por cada planeta, ahora realiza sólo una.-
-- Mejorada la velocidad de procesamiento al determinar si un usuario puede o no entrar en modo vacaciones.- 
+- Mejorada la velocidad de procesamiento al determinar si un usuario puede o no entrar en modo vacaciones.-
 - De 2 a 1 query para determinar si un jugador puede o no entrar en modo vacaciones.-
 
 -[Bugs]
