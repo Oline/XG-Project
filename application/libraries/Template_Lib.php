@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @package	XG Project
+ * @package		XG Project
  * @copyright	Copyright (c) 2008 - 2014
- * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
- * @since	Version 3.0.0
+ * @license		http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since		Version 3.0.0
  */
 
 if ( ! defined ( 'INSIDE' ) ) { die ( header ( 'location:../../' ) ) ; }
@@ -14,7 +14,6 @@ class Template_Lib
 	private $_current_user;
 	private $_current_planet;
 	private $_lang;
-	private $_current_year;
 
 	/**
 	 * __construct()
@@ -26,7 +25,6 @@ class Template_Lib
 		$this->_current_user	= $users->get_user_data();
 		$this->_current_planet	= $users->get_planet_data();
 		$this->_lang			= $lang;
-		$this->_current_year	= date ( 'Y' );
 	}
 
 	/**
@@ -106,12 +104,12 @@ class Template_Lib
 
 		if ( defined ( 'IN_ADMIN' ) )
 		{
-			$page .= $this->parse_template ( $this->get_template ( 'adm/simple_footer' ) , array ( 'year' => $this->_current_year ) );
+			$page .= $this->parse_template ( $this->get_template ( 'adm/simple_footer' ) , '' ) );
 		}
 
 		if ( defined ( 'IN_INSTALL' ) && ! defined ( 'IN_MESSAGE' ) )
 		{
-			$page .= $this->parse_template ( $this->get_template ( 'install/simple_footer' ) , array ( 'year' => $this->_current_year ) );
+			$page .= $this->parse_template ( $this->get_template ( 'install/simple_footer' ) , '' );
 		}
 
 		// Show result page
@@ -456,9 +454,7 @@ class Template_Lib
 
 		// PARSE THE MENU AND OTHER DATA
 		$parse['dpath']			= DPATH;
-		$parse['version']		= VERSION;
 		$parse['servername']	= Functions_Lib::read_config ( 'game_name' );
-		$parse['year']			= $this->_current_year;
 		$parse['menu_block1']	= $menu_block1;
 		$parse['menu_block2']	= $menu_block2;
 		$parse['menu_block3']	= $menu_block3;

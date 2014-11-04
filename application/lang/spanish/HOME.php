@@ -74,7 +74,7 @@ $lang['re_mail_text_part2']					= '<strong>Datos de acceso al juego</strong>';
 $lang['re_mail_text_part3']					= 'Tu nombre de usuario';
 $lang['re_mail_text_part4']					= 'Tu clave';
 $lang['re_mail_text_part5']					= 'Enlace al juego';
-$lang['re_mail_text_part6']					= '&iexcl;Disfrut&aacute; del juego!';
+$lang['re_mail_text_part6']					= '¡Disfruta del juego!';
 $lang['re_mail_text_part7']					= 'Atentamente,<br/>El equipo de XGP.-';
 $lang['re_mail_register_at']				= 'Registro en XG Project';
 

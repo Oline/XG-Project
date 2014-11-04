@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @package	XG Project
+ * @package		XG Project
  * @copyright	Copyright (c) 2008 - 2014
- * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
- * @since	Version 3.0.0
+ * @license		http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since		Version 3.0.0
  */
 
 if ( ! defined ( 'INSIDE' ) ) { die ( header ( 'location:../../' ) ) ; }
@@ -63,7 +63,7 @@ class Notes extends XGPCore
 		{
 			$time 		= time();
 			$priority 	= intval($_POST['u']);
-			$title 		= ( $_POST['title'] ) ? parent::$db->escape_value ( strip_tags ( $_POST['title'] ) ) : "Sin t&iacute;tulo";
+			$title 		= ( $_POST['title'] ) ? parent::$db->escape_value ( strip_tags ( $_POST['title'] ) ) : "Sin título";
 			$text		= $_POST['text'] ? Functions_Lib::format_text ( $_POST['text'] )  : $this->_lang['nt_no_text'];
 
 			if ( $s == 1 )

@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @package	XG Project
+ * @package		XG Project
  * @copyright	Copyright (c) 2008 - 2014
- * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
- * @since	Version 3.0.0
+ * @license		http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since		Version 3.0.0
  */
 
 if ( ! defined ( 'INSIDE' ) ) { die ( header ( 'location:../../' ) ) ; }
@@ -48,8 +48,6 @@ class Recoverpassword extends XGPCore
 		}
 		else
 		{
-			$parse['year']		   = date ( 'Y' );
-			$parse['version']	   = VERSION;
 			$parse['forum_url']    = Functions_Lib::read_config ( 'forum_url' );
 			parent::$page->display ( parent::$page->parse_template ( parent::$page->get_template ( 'home/lostpassword' ) , $parse ) , FALSE , '' , FALSE );
 		}

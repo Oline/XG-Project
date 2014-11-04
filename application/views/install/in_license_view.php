@@ -6,12 +6,12 @@
 			<br />
 			<div align="center">
 				<div style="overflow-x:auto;overflow-y:visible;width:100%;height:470px;text-align:justify;">
-					<h2>XG Project&copy; License</h2>
+					<h2>XG Project © License</h2>
 					<div dir="ltr">
 					<h3 style="text-align: center;">GNU GENERAL PUBLIC LICENSE</h3>
 					<p style="text-align: center;">Version 3, 29 June 2007</p>
 
-					<p>Copyright &copy; 2007 Free Software Foundation, Inc.
+					<p>Copyright © 2007 Free Software Foundation, Inc.
 					 &lt;<a href="http://fsf.org/">http://fsf.org/</a>&gt;</p><p>
 					 Everyone is permitted to copy and distribute verbatim copies
 					 of this license document, but changing it is not allowed.</p>

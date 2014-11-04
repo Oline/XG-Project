@@ -4,7 +4,7 @@
       <hr>
 
       <footer>
-        <p>&copy; XG Project {year}</p>
+        <p>© XG Project 2008 - 2014</p>
       </footer>
 
     </div><!--/.fluid-container-->

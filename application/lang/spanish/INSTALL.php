@@ -21,11 +21,11 @@ $lang['ins_language_select']		= 'Seleccionar idioma';
 
 
 // OVERVIEW PAGE
-$lang['ins_title']					= 'Introducci&oacute;n';
+$lang['ins_title']					= 'Introducción';
 $lang['ins_welcome']				= '¡Bienvenido a XG Project!';
 $lang['ins_welcome_first_line']		= 'XG Project es uno de los mejores clones de OGame existentes hasta el momento. XG Project 3 es el último y más estable paquete nunca antes desarrollado. Tal cual como las otras versiones, XG Project recibe soporte del equipo antes conocido como Xtreme-gameZ, asegurándonos siempre de lograr la mejor calidad en atención y la estabilidad de la versión. XG Project 3 día a día busca; crecimiento, estabilidad, flexibilidad, dinamismo, calidad y la confianza del usuario en que es su mejor opción y elección. Siempre esperamos que XG Project sea mejor que sus expectativas.';
-$lang['ins_welcome_second_line']	= 'El sistema de instalaci&oacute;n te guiar&aacute; a trav&eacute;s de la instalaci&oacute;n del mismo, o la actualizaci&oacute;n de una versi&oacute;n anterior a la m&aacute;s reciente. Cualquier duda, problema o consulta no dudes en consulta nuestra <a href="http://www.xgproyect.net/"><em>comunidad de desarrollo y soporte</em></a>.';
-$lang['ins_welcome_third_line']		= 'XG Project es un proyecto OpenSource (código abierto), para ver las especificaciones de la licencia haz click en licencia en la barra superior. Para comenzar la instalaci&oacute;n haz click en el bot&oacute;n instalar o para actualizar a la versi&oacute;n m&aacute;s nueva haz click en el bot&oacute;n actualizar.';
+$lang['ins_welcome_second_line']	= 'El sistema de instalación te guiará a través de la instalación del mismo, o la actualización de una versión anterior a la más reciente. Cualquier duda, problema o consulta no dudes en consulta nuestra <a href="http://www.xgproyect.net/"><em>comunidad de desarrollo y soporte</em></a>.';
+$lang['ins_welcome_third_line']		= 'XG Project es un proyecto OpenSource (código abierto), para ver las especificaciones de la licencia haz click en licencia en la barra superior. Para comenzar la instalación haz click en el botón instalar o para actualizar a la versión más nueva haz click en el botón actualizar.';
 $lang['ins_install_license']		= 'Licencia';
 
 // INSTALL PAGE
@@ -40,7 +40,7 @@ $lang['ins_continue']				= 'Continuar';
 
 // STEP1
 $lang['ins_install_title']			= 'Instalación';
-$lang['ins_connection_data_title']	= 'Datos para la conexi&oacute;n con la Base de Datos';
+$lang['ins_connection_data_title']	= 'Datos para la conexión con la Base de Datos';
 $lang['ins_chmod_notice']			= 'Antes de instalar cambie los permisos del archivo config.php a "CHMOD 777"';
 $lang['ins_server_title']			= 'Servidor SQL:';
 $lang['ins_db_title']				= 'Base de datos:';
@@ -53,28 +53,28 @@ $lang['ins_install_go']				= 'Instalar';
 // ERRORS
 $lang['ins_not_connected_error']	= 'No fue posible conectarse a la base de datos con los datos ingresados.';
 $lang['ins_empty_fields_error']		= 'Todos los campos son obligatorios';
-$lang['ins_write_config_error']		= 'Error al escribir el archivo config.php, aseg&uacute;rese de que sea CHMOD 777 (permisos de escritura) o que exista el archivo config.php';
+$lang['ins_write_config_error']		= 'Error al escribir el archivo config.php, asegúrese de que sea CHMOD 777 (permisos de escritura) o que exista el archivo config.php';
 $lang['ins_insert_tables_error']	= 'Error al insertar datos en la base de datos, verifique los datos o que el servidor este activo.';
 
 // STEP2
-$lang['ins_done_config']			= 'Archivo config.php configurado con &eacute;xito.';
-$lang['ins_done_connected']			= 'Conexi&oacute;n establecida con &eacute;xito.';
-$lang['ins_done_insert']			= 'Datos base insertados en la base de datos con &eacute;xito.';
+$lang['ins_done_config']			= 'Archivo config.php configurado con éxito.';
+$lang['ins_done_connected']			= 'Conexión establecida con éxito.';
+$lang['ins_done_insert']			= 'Datos base insertados en la base de datos con éxito.';
 
 // STEP3
-$lang['ins_admin_create_title']		= 'Establecer cuenta de administraci&oacute;n';
+$lang['ins_admin_create_title']		= 'Establecer cuenta de administración';
 $lang['ins_admin_create_user']		= 'Usuario:';
-$lang['ins_admin_create_pass']		= 'Contrase&ntilde;a:';
-$lang['ins_admin_create_email']		= 'Correo electr&oacute;nico:';
+$lang['ins_admin_create_pass']		= 'Contraseña:';
+$lang['ins_admin_create_email']		= 'Correo electrónico:';
 $lang['ins_admin_create_create']	= 'Crear';
 
 // ERRORS
 $lang['ins_adm_empty_fields_eror']	= 'Todos los campos son obligatorios';
 
 // STEP 4
-$lang['ins_completed']				= '&iexcl;INSTALACI&Oacute;N FINALIZADA!';
+$lang['ins_completed']				= '¡INSTALACIÓN FINALIZADA!';
 $lang['ins_admin_account_created']	= 'El Administrador ha sido creado correctamente.';
-$lang['ins_delete_install']			= '&iexcl;Ahora debes borrar la carpeta <i>install</i> asi evitaras problemas graves de seguridad!';
+$lang['ins_delete_install']			= '¡Ahora debes borrar la carpeta <i>install</i> asi evitaras problemas graves de seguridad!';
 $lang['ins_end']					= 'Finalizar';
 
 // UPDATE PAGE

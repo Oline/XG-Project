@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @package	XG Project
+ * @package		XG Project
  * @copyright	Copyright (c) 2008 - 2014
- * @license	http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
- * @since	Version 3.0.0
+ * @license		http://opensource.org/licenses/gpl-3.0.html	GPL-3.0
+ * @since		Version 3.0.0
  */
 
 class Options extends XGPCore
