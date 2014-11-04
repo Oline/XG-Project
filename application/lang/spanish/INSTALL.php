@@ -46,7 +46,7 @@ $lang['ins_server_title']			= 'Servidor SQL:';
 $lang['ins_db_title']				= 'Base de datos:';
 $lang['ins_user_title']				= 'Usuario:';
 $lang['ins_password_title']			= 'Contraseña:';
-$lang['ins_prefix_title']			= 'Prefix de las tablas:';
+$lang['ins_prefix_title']			= 'Prefijo de las tablas:';
 $lang['ins_ex_tag']					= 'Ej:';
 $lang['ins_install_go']				= 'Instalar';
 
@@ -59,7 +59,7 @@ $lang['ins_insert_tables_error']	= 'Error al insertar datos en la base de datos,
 // STEP2
 $lang['ins_done_config']			= 'Archivo config.php configurado con éxito.';
 $lang['ins_done_connected']			= 'Conexión establecida con éxito.';
-$lang['ins_done_insert']			= 'Datos base insertados en la base de datos con éxito.';
+$lang['ins_done_insert']			= 'Base de datos configurada con éxito.';
 
 // STEP3
 $lang['ins_admin_create_title']		= 'Establecer cuenta de administración';

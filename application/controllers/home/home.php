@@ -52,7 +52,7 @@ class Home extends XGPCore
 														AND `user_password` = '" . sha1 ( $_POST['pass'] ) . "'
 													LIMIT 1" );
 
-			if ( $login['user_banned'] <= time() )
+			if ( $login['user_banned'] != 0 && $login['user_banned'] <= time() )
 			{
 				$this->remove_ban ( $login['user_name'] );
 			}
