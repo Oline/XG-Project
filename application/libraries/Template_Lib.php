@@ -104,7 +104,7 @@ class Template_Lib
 
 		if ( defined ( 'IN_ADMIN' ) )
 		{
-			$page .= $this->parse_template ( $this->get_template ( 'adm/simple_footer' ) , '' ) );
+			$page .= $this->parse_template ( $this->get_template ( 'adm/simple_footer' ) , '' );
 		}
 
 		if ( defined ( 'IN_INSTALL' ) && ! defined ( 'IN_MESSAGE' ) )
