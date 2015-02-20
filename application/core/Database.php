@@ -155,7 +155,7 @@ class Database
 			{
 				$value = stripslashes( $value );
 			}
-			$value = mysql_real_escape_string( $value );
+			$value = $this->_connection->real_escape_string( $value );
 		}
 		else
 		{
