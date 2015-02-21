@@ -288,7 +288,7 @@ class Update_Lib extends XGPCore
 										`planet_b_building_id` = '". $current_planet['planet_b_building_id'] ."',
 										`planet_field_current` = '" . $current_planet['planet_field_current'] . "',
 										`planet_field_max` = '" . $current_planet['planet_field_max'] . "'
-										WHERE `planet_id` = '" . $current_planet['id'] . "';" );
+										WHERE `planet_id` = '" . $current_planet['planet_id'] . "';" );
 
 				$ret_value = TRUE;
 			}
@@ -305,7 +305,7 @@ class Update_Lib extends XGPCore
 			parent::$db->query ( "UPDATE " . PLANETS . " SET
 									`planet_b_building` = '". $current_planet['planet_b_building'] ."',
 									`planet_b_building_id` = '". $current_planet['planet_b_building_id'] ."'
-									WHERE `planet_id` = '" . $current_planet['id'] . "';" );
+									WHERE `planet_id` = '" . $current_planet['planet_id'] . "';" );
 
 			$ret_value = FALSE;
 		}
