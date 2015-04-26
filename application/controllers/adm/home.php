@@ -126,10 +126,10 @@ class Home extends XGPCore
 	{
 		if ( function_exists ( 'file_get_contents' ) )
 		{
-			$last_v 	= @file_get_contents ( 'http://xgproyect.xgproyect.net/current.php' );
-			$system_v	= Functions_Lib::read_config ( 'version' );
+			$last_v 	= @file_get_contents('https://xgproject.org/check_updates.php');
+			$system_v	= Functions_Lib::read_config('version');
 
-			return version_compare ( $system_v , $last_v , '<' );
+			return version_compare ($system_v, $last_v, '<');
 		}
 	}
 }

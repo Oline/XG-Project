@@ -170,7 +170,7 @@
 	</config>
 	<config>
 		<name>version</name>
-		<value>3.0</value>
+		<value>3.0-b6-dev</value>
 	</config>
 	<config>
 		<name>security_token</name>
