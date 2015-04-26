@@ -267,7 +267,7 @@
 	</div>
 	<div id="footer">
 	    <div id="footerContent">
-            <p id="copyright">Powered by <a href="https://github.com/XG-Project/XG-Project" target="_blank" title="XG Project">XG Project</a> © 2008 - 2014.</p>
+            <p id="copyright">Powered by <a href="https://github.com/XG-Project/XG-Project" target="_blank" title="XG Project">XG Project</a> © 2008 - 2015.</p>
         </div>
 	</div>
 

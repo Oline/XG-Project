@@ -4,7 +4,7 @@
 $lang['404_error']					= 'The requested page doesn\'t exists';
 $lang['ins_no_server_requirements']	= 'Your server / hosting does not meet the minimum requirements needed to run XG Project.<br /><br />Requirements: <br />- PHP 5.3.0<br />- MySQL 5.0.19';
 $lang['ins_already_installed']		= 'XG Project is already installed. Select an option: <br /><br /> - <a href="index.php?page=update">Update</a> <br /> - <a href="index.php?page=migrate">Migrate</a> <br /> - <a href="../">Back to the game</a> <br /><br />In case you do not want to take any action, for safety, we recommend <span style="color:red;text-decoration:underline;">DELETE</span> the install directory.';
-$lang['ins_missing_xml_file']		= 'Could not find the config.xml file or the file config.xml.cfg, you must have one of these in order to continue with the installation. Check your application/config directory and the permissions must be set on chmod 777';
+$lang['ins_missing_xml_file']		= 'Could not find the config.xml file or the file config.xml.cfg, you must have one of these in order to continue with the installation. Check your application/config directory and the permissions must be set on chmod 0777';
 
 // SOME ERROR HEADERS
 $lang['ins_error_title']			= 'Alert!';
@@ -40,7 +40,7 @@ $lang['ins_continue']				= 'Continue';
 
 // STEP1
 $lang['ins_connection_data_title']	= 'Data to connect to the database';
-$lang['ins_chmod_notice']			= 'Before installing change the permissions of the config.php file to "CHMOD 777"';
+$lang['ins_chmod_notice']			= 'Before installing change the permissions of application/config/config.php and application/config/config.xml files to "CHMOD 0777"';
 $lang['ins_server_title']			= 'SQL server:';
 $lang['ins_db_title']				= 'Database:';
 $lang['ins_user_title']				= 'User:';
@@ -52,7 +52,7 @@ $lang['ins_install_go']				= 'Intall';
 // ERRORS
 $lang['ins_not_connected_error']	= 'Unable to connect to the database with the data entered.';
 $lang['ins_empty_fields_error']		= 'All fields are required';
-$lang['ins_write_config_error']		= 'Error writing the config.php file, make sure it is 777 CHMOD (write permissions) or the file exists';
+$lang['ins_write_config_error']		= 'Error writing the config.php file, make sure it is 0777 CHMOD (write permissions) or the file exists';
 $lang['ins_insert_tables_error']	= 'Failed to insert data into the database, check the database or that the server is active.';
 
 // STEP2

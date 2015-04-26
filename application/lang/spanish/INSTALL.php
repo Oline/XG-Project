@@ -4,7 +4,7 @@
 $lang['404_error']					= 'La página solicitada no existe';
 $lang['ins_no_server_requirements']	= 'Tu servidor/hosting no cumple con los requisitos mínimos que requiere XG Project para funcionar.<br /><br />Requisitos: <br />- PHP 5.2.0<br />- MySQL 5.0.19';
 $lang['ins_already_installed']		= 'XG Project ya se encuentra instalado. Selecciona una opción: <br /><br /> - <a href="index.php?page=update">Actualizar</a> <br /> - <a href="index.php?page=migrate">Migrar</a> <br /> - <a href="../">Volver al juego</a> <br /><br />En el caso de que no desees realizar ninguna acción, por seguridad, te recomendamos <span style="color:red;text-decoration:underline;">BORRAR</span> el directorio install.';
-$lang['ins_missing_xml_file']		= 'No se puede encontrar el archivo config.xml ni el archivo config.xml.cfg, debes tener alguno de estos para poder continuar con la instalación. Revisa tu directorio application/config y los permisos del mismo deben estar en chmod 777';
+$lang['ins_missing_xml_file']		= 'No se puede encontrar el archivo config.xml ni el archivo config.xml.cfg, debes tener alguno de estos para poder continuar con la instalación. Revisa tu directorio application/config y los permisos del mismo deben estar en chmod 0777';
 
 // SOME ERROR HEADERS
 $lang['ins_error_title']			= '¡Alerta!';
@@ -41,7 +41,7 @@ $lang['ins_continue']				= 'Continuar';
 // STEP1
 $lang['ins_install_title']			= 'Instalación';
 $lang['ins_connection_data_title']	= 'Datos para la conexión con la Base de Datos';
-$lang['ins_chmod_notice']			= 'Antes de instalar cambie los permisos del archivo config.php a "CHMOD 777"';
+$lang['ins_chmod_notice']			= 'Antes de instalar cambie los permisos de los archivos application/config/config.php y application/config/config.xml a "CHMOD 0777"';
 $lang['ins_server_title']			= 'Servidor SQL:';
 $lang['ins_db_title']				= 'Base de datos:';
 $lang['ins_user_title']				= 'Usuario:';
@@ -53,7 +53,7 @@ $lang['ins_install_go']				= 'Instalar';
 // ERRORS
 $lang['ins_not_connected_error']	= 'No fue posible conectarse a la base de datos con los datos ingresados.';
 $lang['ins_empty_fields_error']		= 'Todos los campos son obligatorios';
-$lang['ins_write_config_error']		= 'Error al escribir el archivo config.php, asegúrese de que sea CHMOD 777 (permisos de escritura) o que exista el archivo config.php';
+$lang['ins_write_config_error']		= 'Error al escribir el archivo config.php, asegúrese de que sea CHMOD 0777 (permisos de escritura) o que exista el archivo config.php';
 $lang['ins_insert_tables_error']	= 'Error al insertar datos en la base de datos, verifique los datos o que el servidor este activo.';
 
 // STEP2
