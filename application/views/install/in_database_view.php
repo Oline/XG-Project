@@ -22,11 +22,11 @@
 					<label>{ins_prefix_title}</label>
 					<input type="text" name="prefix" placeholder="{ins_ex_tag} xgp_" value="">
 					<div align="center">
-						<input type="button" class="btn btn-primary" name="next" onclick="submit();" value="{ins_install_go}">
+						<span class="text-error">{ins_chmod_notice}</span>
 					</div>
 					<div align="center">
-						<br/>
-						<span class="text-error">{ins_chmod_notice}</span>
+						<br>
+						<input type="button" class="btn btn-primary" name="next" onclick="submit();" value="{ins_install_go}">
 					</div>
 				</div>
 			</form>

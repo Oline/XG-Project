@@ -144,36 +144,29 @@ class Creator_Lib extends XGPCore
 			$planet['planet_last_update'] 	= time();
 			$planet['planet_name'] 			= ($planet_name == '') ? $this->_lang['ge_colony'] : $planet_name;
 
-			parent::$db->query ( "INSERT INTO " . PLANETS . " SET
-									" . ( ( $home_world == FALSE ) ? "`planet_name` = '{$planet['planet_name']}'," : $this->_lang['ge_home_planet'] ) ."
-									`planet_user_id` = '" . $planet['planet_user_id'] . "',
-									`planet_galaxy` = '" . $planet['galaxy'] . "',
-									`planet_system` = '" . $planet['system'] . "',
-									`planet_planet` = '" . $planet['planet'] . "',
-									`planet_last_update` = '" . $planet['planet_last_update'] . "',
-									`planet_type` = '" . $planet['planet_type'] . "',
-									`planet_image` = '" . $planet['image'] . "',
-									`planet_diameter` = '" . $planet['planet_diameter'] . "',
-									`planet_field_max` = '" . $planet['planet_field_max'] . "',
-									`planet_temp_min` = '" . $planet['planet_temp_min'] . "',
-									`planet_temp_max` = '" . $planet['planet_temp_max'] . "',
-									`planet_metal` = '" . $planet['metal'] . "',
-									`planet_metal_perhour` = '" . $planet['planet_metal_perhour'] . "',
-									`planet_crystal` = '" . $planet['crystal'] . "',
-									`planet_crystal_perhour` = '" . $planet['planet_crystal_perhour'] . "',
-									`planet_deuterium` = '" . $planet['deuterium'] . "',
-									`planet_deuterium_perhour` = '" . $planet['planet_deuterium_perhour'] . "';" );
+			parent::$db->query("INSERT INTO " . PLANETS . " (planet_name, planet_user_id, planet_galaxy,
+				planet_system, planet_planet, planet_last_update, planet_type, planet_image, planet_diameter,
+				planet_field_max, planet_temp_min, planet_temp_max, planet_metal, planet_metal_perhour,
+				planet_crystal, planet_crystal_perhour, planet_deuterium, planet_deuterium_perhour) VALUES (
+
+				'". ( ! $home_world ? $planet['planet_name'] : $this->_lang['ge_home_planet']) ."',
+				'". $planet['planet_user_id'] ."', '". $planet['galaxy'] ."', '". $planet['system'] ."',
+				'". $planet['planet'] ."', '". $planet['planet_last_update'] ."', '". $planet['planet_type'] ."',
+				'". $planet['image'] ."', '". $planet['planet_diameter'] ."', '". $planet['planet_field_max'] ."',
+				'". $planet['planet_temp_min'] ."', '". $planet['planet_temp_max'] ."', '". $planet['metal'] ."',
+				'". $planet['planet_metal_perhour'] ."', '". $planet['crystal'] ."', '". $planet['planet_crystal_perhour'] ."',
+				'". $planet['deuterium'] ."', '". $planet['planet_deuterium_perhour'] ."');");
 
 			$last_id	= parent::$db->insert_id();
 
-			parent::$db->query ( "INSERT INTO " . BUILDINGS . " SET
-									`building_planet_id` = '" . $last_id . "';" );
+			parent::$db->query("INSERT INTO ". BUILDINGS ." SET
+								`building_planet_id` = '". $last_id ."';");
 
-			parent::$db->query ( "INSERT INTO " . DEFENSES . " SET
-									`defense_planet_id` = '" . $last_id . "';" );
+			parent::$db->query("INSERT INTO ". DEFENSES ." SET
+									`defense_planet_id` = '" . $last_id ."';" );
 
-			parent::$db->query ( "INSERT INTO " . SHIPS . " SET
-									`ship_planet_id` = '" . $last_id . "';" );
+			parent::$db->query("INSERT INTO ". SHIPS ." SET
+									`ship_planet_id` = '". $last_id ."';" );
 
 			$RetValue = TRUE;
 		}
