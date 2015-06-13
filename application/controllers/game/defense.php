@@ -94,7 +94,7 @@ class Defense extends XGPCore
 					$Count = MAX_FLEET_OR_DEFS_PER_ROW;
 				}
 
-				if ($Count != 0)
+                if ($Count != 0)
 				{
 					if ( $Element == 407 or $Element == 408 )
 					{
@@ -106,13 +106,13 @@ class Defense extends XGPCore
 						{
 							$Count = 0;
 						}
-					}
+                    }
 
-					if (Developments_Lib::is_development_allowed($this->_current_user, $this->_current_planet, $Element))
+                    if (Developments_Lib::is_development_allowed($this->_current_user, $this->_current_planet, $Element))
 					{
-						$MaxElements = $this->GetMaxConstructibleElements ( $Element, $this->_current_planet );
+                        $MaxElements = $this->GetMaxConstructibleElements ( $Element, $this->_current_planet );
 
-						if ($Element == 502 || $Element == 503)
+                        if ($Element == 502 || $Element == 503)
 						{
 							$ActuMissiles  = $Missiles[502] + ( 2 * $Missiles[503] );
 							$MissilesSpace = $MaxMissiles - $ActuMissiles;
@@ -146,13 +146,12 @@ class Defense extends XGPCore
 							{
 								$Count = $MaxElements;
 							}
-
 						}
 
 						$Ressource = $this->GetElementRessources ( $Element, $Count );
 
 						if ($Count >= 1)
-						{
+                        {
 							$this->_current_planet['planet_metal']           -= $Ressource['metal'];
 							$this->_current_planet['planet_crystal']         -= $Ressource['crystal'];
 							$this->_current_planet['planet_deuterium']       -= $Ressource['deuterium'];
@@ -292,13 +291,13 @@ class Defense extends XGPCore
     {
         $Buildable=array();
         if ($this->_price[$Element]['metal'] != 0)
-            $Buildable['metal']     = floor($Ressources['metal'] / $this->_price[$Element]['metal']);
+            $Buildable['metal']     = floor($Ressources['planet_metal'] / $this->_price[$Element]['metal']);
 
         if ($this->_price[$Element]['crystal'] != 0)
-            $Buildable['crystal']   = floor($Ressources['crystal'] / $this->_price[$Element]['crystal']);
+            $Buildable['crystal']   = floor($Ressources['planet_crystal'] / $this->_price[$Element]['crystal']);
 
         if ($this->_price[$Element]['deuterium'] != 0)
-            $Buildable['deuterium'] = floor($Ressources['deuterium'] / $this->_price[$Element]['deuterium']);
+            $Buildable['deuterium'] = floor($Ressources['planet_deuterium'] / $this->_price[$Element]['deuterium']);
 
         if ($this->_price[$Element]['energy'] != 0)
             $Buildable['energy']    = floor($Ressources['planet_energy_max'] / $this->_price[$Element]['energy']);

@@ -209,13 +209,13 @@ class Shipyard extends XGPCore
     {
         $Buildable=array();
         if ($this->_price[$Element]['metal'] != 0)
-            $Buildable['metal']     = floor($Ressources['metal'] / $this->_price[$Element]['metal']);
+            $Buildable['metal']     = floor($Ressources['planet_metal'] / $this->_price[$Element]['metal']);
 
         if ($this->_price[$Element]['crystal'] != 0)
-            $Buildable['crystal']   = floor($Ressources['crystal'] / $this->_price[$Element]['crystal']);
+            $Buildable['crystal']   = floor($Ressources['planet_crystal'] / $this->_price[$Element]['crystal']);
 
         if ($this->_price[$Element]['deuterium'] != 0)
-            $Buildable['deuterium'] = floor($Ressources['deuterium'] / $this->_price[$Element]['deuterium']);
+            $Buildable['deuterium'] = floor($Ressources['planet_deuterium'] / $this->_price[$Element]['deuterium']);
 
         if ($this->_price[$Element]['energy'] != 0)
             $Buildable['energy']    = floor($Ressources['planet_energy_max'] / $this->_price[$Element]['energy']);
