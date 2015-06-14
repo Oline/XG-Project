@@ -117,11 +117,11 @@ class Research extends XGPCore
 						{
 							$bloc	= $this->_lang;
 
-							if ( $this->_is_working['working_on']['id'] != $this->_current_planet['planet_id'] )
+							if ( $this->_is_working['working_on']['planet_id'] != $this->_current_planet['planet_id'] )
 							{
 								$bloc['tech_time']  = $this->_is_working['working_on']['planet_b_tech'] - time();
 								$bloc['tech_name']  = $this->_lang['bd_from'] . $this->_is_working['working_on']['planet_name'] . '<br /> ' . Format_Lib::pretty_coords ( $this->_is_working['working_on']['planet_galaxy'] , $this->_is_working['working_on']['planet_system'] , $this->_is_working['working_on']['planet_planet'] );
-								$bloc['tech_home']  = $this->_is_working['working_on']['id'];
+								$bloc['tech_home']  = $this->_is_working['working_on']['planet_id'];
 								$bloc['tech_id']    = $this->_is_working['working_on']['planet_b_tech_id'];
 							}
 							else
@@ -181,10 +181,10 @@ class Research extends XGPCore
 
 						if ( $this->_is_working['working_on']['planet_b_tech_id'] == $technology )
 						{
-							$costs                        						= Developments_Lib::development_price ( $this->_current_user , $working_planet , $technology );
-							$working_planet['planet_metal']      			   += $costs['metal'];
-							$working_planet['planet_crystal']    			   += $costs['crystal'];
-							$working_planet['planet_deuterium']  			   += $costs['deuterium'];
+							$costs   						= Developments_Lib::development_price ( $this->_current_user , $working_planet , $technology );
+							$working_planet['planet_metal']      			+= $costs['metal'];
+							$working_planet['planet_crystal']    			+= $costs['crystal'];
+							$working_planet['planet_deuterium']  			+= $costs['deuterium'];
 							$working_planet['planet_b_tech_id']   				= 0;
 							$working_planet['planet_b_tech']      				= 0;
 							$this->_current_user['research_current_research'] 	= 0;
@@ -205,11 +205,10 @@ class Research extends XGPCore
 							$working_planet['planet_deuterium']  			   -= $costs['deuterium'];
 							$working_planet['planet_b_tech_id']   				= $technology;
 							$working_planet['planet_b_tech']      				= time() + Developments_Lib::development_time ( $this->_current_user , $working_planet , $technology , FALSE , $this->_lab_level );
-							$this->_current_user['research_current_research'] 	= $working_planet['id'];
+							$this->_current_user['research_current_research'] 	= $working_planet['planet_id'];
 							$update_data                   						= TRUE;
 							$this->_is_working['is_working']                   	= TRUE;
 						}
-
 					break;
 				}
 
@@ -261,12 +260,12 @@ class Research extends XGPCore
 		if ( $this->_current_planet['planet_b_building_id'] != 0 )
 		{
 			$current_queue	= $this->_current_planet['planet_b_building_id'];
-
+			$current_building = $element_id = NULL;
 			if ( strpos ( $current_queue , ';' ) )
 			{
 				$queue	= explode ( ';' , $current_queue );
 
-				for ( $i = 0 ; $i < MAX_BUILDING_QUEUE_SIZE ; $i++ )
+				for ( $i = 0 ; $i < min(count($queue),MAX_BUILDING_QUEUE_SIZE) ; $i++ )
 				{
 					$element_data	= explode ( "," , $queue[$i] );
 					$element_id		= $element_data[0];
@@ -309,7 +308,6 @@ class Research extends XGPCore
 																FROM " . PLANETS . "
 																WHERE `planet_id` = '". (int)$this->_current_user['research_current_research'] ."';");
 			}
-
 			if ( isset ( $working_planet ) )
 			{
 				$the_planet	= $working_planet;
