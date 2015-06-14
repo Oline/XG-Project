@@ -22,7 +22,7 @@ class UpdateResources_Lib extends XGPCore
 		$game_crystal_basic_income				= Functions_Lib::read_config ( 'crystal_basic_income' );
 		$game_deuterium_basic_income			= Functions_Lib::read_config ( 'deuterium_basic_income' );
 
-		$CurrentPlanet['planet_metal_max']		= Production_Lib::max_storable ( $current_planet[$resource[22]]);
+		$current_planet['planet_metal_max']		= Production_Lib::max_storable ( $current_planet[$resource[22]]);
 		$current_planet['planet_crystal_max']	= Production_Lib::max_storable ( $current_planet[$resource[23]]);
 		$current_planet['planet_deuterium_max']	= Production_Lib::max_storable ( $current_planet[$resource[24]]);
 

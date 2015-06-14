@@ -62,8 +62,8 @@ class Infos extends XGPCore
 	 * param
 	 * return main method, loads everything
 	 */
-    private function build_page()
-    {
+	private function build_page()
+	{
 		if ( !array_key_exists ( $this->_element_id , $this->_resource ) )
 		{
 			Functions_Lib::redirect ( 'game.php?page=techtree' );
@@ -613,6 +613,9 @@ class Infos extends XGPCore
         $ResultString = "";
         for ($Type = 200; $Type < 500; $Type++)
         {
+            if (!isset($this->_combat_caps[$this->_element_id]['sd'][$Type]))
+                continue;
+
             if ($this->_combat_caps[$this->_element_id]['sd'][$Type] > 1)
                 $ResultString .= $this->_lang['in_rf_again']. " ". $this->_lang['tech'][$Type] ." <font color=\"#00ff00\">".$this->_combat_caps[$this->_element_id]['sd'][$Type]."</font><br>";
         }
@@ -624,6 +627,9 @@ class Infos extends XGPCore
         $ResultString = "";
         for ($Type = 200; $Type < 500; $Type++)
         {
+            if (!isset($this->_combat_caps[$this->_element_id]['sd'][$Type]))
+                continue;
+
             if ($this->_combat_caps[$Type]['sd'][$this->_element_id] > 1)
                 $ResultString .= $this->_lang['in_rf_from']. " ". $this->_lang['tech'][$Type] ." <font color=\"#ff0000\">".$this->_combat_caps[$Type]['sd'][$this->_element_id]."</font><br>";
         }

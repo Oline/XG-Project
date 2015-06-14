@@ -123,13 +123,13 @@ class Shipyard extends XGPCore
 		if ( $this->_current_planet['planet_b_building_id'] != 0 )
 		{
 			$CurrentQueue	= $this->_current_planet['planet_b_building_id'];
-
+			$Element = $CurrentBuilding = NULL;
 			if ( strpos ( $CurrentQueue , ";" ) )
 			{
 				// FIX BY LUCKY - IF THE SHIPYARD IS IN QUEUE THE USER CANT RESEARCH ANYTHING...
 				$QueueArray		= explode (";", $CurrentQueue);
 
-				for ( $i = 0 ; $i < MAX_BUILDING_QUEUE_SIZE ; $i++ )
+				for ( $i = 0 ; $i < min(count($QueueArray),MAX_BUILDING_QUEUE_SIZE) ; $i++ )
 				{
 					$ListIDArray	= explode ( "," , $QueueArray[$i] );
 					$Element		= $ListIDArray[0];
@@ -206,22 +206,22 @@ class Shipyard extends XGPCore
 
 	//optimized by alivan & jstar
 	private function GetMaxConstructibleElements ( $Element , $Ressources )
-    {
-        $Buildable=array();
-        if ($this->_price[$Element]['metal'] != 0)
-            $Buildable['metal']     = floor($Ressources['metal'] / $this->_price[$Element]['metal']);
+	{
+		$Buildable=array();
+		if ($this->_price[$Element]['metal'] != 0)
+			$Buildable['metal']     = floor($Ressources['planet_metal'] / $this->_price[$Element]['metal']);
 
-        if ($this->_price[$Element]['crystal'] != 0)
-            $Buildable['crystal']   = floor($Ressources['crystal'] / $this->_price[$Element]['crystal']);
+		if ($this->_price[$Element]['crystal'] != 0)
+			$Buildable['crystal']   = floor($Ressources['planet_crystal'] / $this->_price[$Element]['crystal']);
 
-        if ($this->_price[$Element]['deuterium'] != 0)
-            $Buildable['deuterium'] = floor($Ressources['deuterium'] / $this->_price[$Element]['deuterium']);
+		if ($this->_price[$Element]['deuterium'] != 0)
+			$Buildable['deuterium'] = floor($Ressources['planet_deuterium'] / $this->_price[$Element]['deuterium']);
 
-        if ($this->_price[$Element]['energy'] != 0)
-            $Buildable['energy']    = floor($Ressources['planet_energy_max'] / $this->_price[$Element]['energy']);
+		if ($this->_price[$Element]['energy'] != 0)
+			$Buildable['energy']    = floor($Ressources['planet_energy_max'] / $this->_price[$Element]['energy']);
 
-        return max(min($Buildable),0);
-    }
+		return max(min($Buildable),0);
+	}
 
 	private function GetElementRessources($Element, $Count)
 	{
