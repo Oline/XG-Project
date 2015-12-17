@@ -11,19 +11,19 @@ if ( ! defined ( 'INSIDE' ) ) { die ( header ( 'location:../../' ) ) ; }
 
 class Language
 {
-	private $_lang;
-	private $_lang_extension = 'php';
+	private $lang;
+	private $langExtension = 'php';
 
 	/**
 	 * __construct()
 	 */
 	public function __construct()
 	{
-		$languages_loaded	= $this->get_file_name();
+		$languagesLoaded	= $this->getFileName();
 
-		foreach ( $languages_loaded as $load )
+		foreach ( $languagesLoaded as $load )
 		{
-			$route	= XGP_ROOT . LANG_PATH . DEFAULT_LANG . '/' . $load . '.' . $this->_lang_extension;
+			$route	= XGP_ROOT . LANG_PATH . DEFAULT_LANG . '/' . $load . '.' . $this->langExtension;
 
 			if ( file_exists ( $route ) ) // WE GOT SOMETHING
 			{
@@ -35,11 +35,12 @@ class Language
 		if ( ! empty ( $lang ) ) // WE GOT SOMETHING
 		{
 			// SET DATA
-			$this->_lang	= $lang;
+			$this->lang	= $lang;
 		}
 		else
 		{
 			// THROW EXCEPTION
+            // This seems to be a bad way to stop stuff in contructors
 			die ( 'Language file not found or empty: <strong>' . $load . '</strong><br />Location: <strong>' . $route . '</strong>' );
 		}
 	}
@@ -51,15 +52,15 @@ class Language
 	 */
 	public function lang()
 	{
-		return $this->_lang;
+		return $this->lang;
 	}
 
 	/**
-	 * method get_file_name
+	 * method getFileName
 	 * param
 	 * return language pack file
 	 */
-	private function get_file_name()
+	private function getFileName()
 	{
 		if ( defined ( 'IN_ADMIN' ) )
 		{

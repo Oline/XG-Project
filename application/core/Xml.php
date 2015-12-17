@@ -12,10 +12,10 @@
  * @author Jstar
  * @version v2
  * @tutorial
- *   $c=xml::getInstance('config.xml');
- *   echo $c->get_config('version');
- *   $c->write_config('version','blabla');
- *   echo $c->get_config('version');
+ *   $newClass=xml::getInstance('config.xml');
+ *   echo $newClass->get_config('version');
+ *   $newClass->writeConfig('version','blabla');
+ *   echo $newClass->get_config('version');
  */
 
 if ( ! defined ( 'INSIDE' ) ) { die ( header ( 'location:../../' ) ) ; }
@@ -55,49 +55,49 @@ class Xml
     }
 
     /**
-     * xml::get_xml_entity()
-     * Search in the xml for a entity rappresented by $config_name
+     * xml::getXmlEntity()
+     * Search in the xml for a entity rappresented by $configName
      *
-     * @param String $config_name: the key
+     * @param String $configName: the key
      * @return SimpleXMLElement object
      */
-    private function get_xml_entity($config_name)
+    private function getXmlEntity($configName)
     {
-        //searching inside <configurations> and where config name=$config_name
-        $result = $this->doXpathQuery('/configurations/config[name="' . $config_name . '"]');
+        //searching inside <configurations> and where config name=$configName
+        $result = $this->doXpathQuery('/configurations/config[name="' . $configName . '"]');
         //if multiple result are returned so key is not unique
         if (!$result || count($result) !== 1)
         {
-            throw new Exception(sprintf('Item with id "%s" does not exists or is not unique.', $config_name));
+            throw new Exception(sprintf('Item with id "%s" does not exists or is not unique.', $configName));
         }
         list($result) = $result;
         return $result;
     }
 
     /**
-     * xml::get_config()
+     * xml::getConfig()
      * This function search in loaded xml for a value according to specific configuration name passed
      *
-     * @param String $config_name
+     * @param String $configName
      * @return String: the configuration value of given key
      */
-    public function get_config($config_name)
+    public function getConfig($configName)
     {
         // (string) is a cast to String type from SimpleXMLElement object: we need this to extract value
-        return (string) $this->get_xml_entity($config_name)->value;
+        return (string) $this->getXmlEntity($configName)->value;
     }
 
     /**
-     * xml::get_configs()
+     * xml::getConfigs()
      * This function return all configurations loaded from xml file
      *
      * @return Array: an associative array of key-value
      */
-    public function get_configs()
+    public function getConfigs()
     {
         $config = array();
-        $x = $this->config->children();
-        foreach ($x as $xmlObject)
+        $xmlChildren = $this->config->children();
+        foreach ($xmlChildren as $xmlObject)
         {
             $config[(string) $xmlObject->name] = (string) $xmlObject->value;
         }
@@ -105,26 +105,26 @@ class Xml
     }
 
     /**
-     * xml::write_config()
+     * xml::writeConfig()
      * This function write the xml configuration file updating one or multiple key-value at time
      *
-     * @param mixed $config_name : String for single update or an associative array of key=>value
-     * @param String $config_value : The value that will be setted in corrispective key $config_name
+     * @param mixed $configName : String for single update or an associative array of key=>value
+     * @param String $configValue : The value that will be setted in corrispective key $configName
      * @return null
      */
-    public function write_config($config_name, $config_value)
+    public function writeConfig($configName, $configValue)
     {
-        //if $config_name is an array, then we wont update all values and do single save task at the end
-        if (is_array($config_name))
+        //if $configName is an array, then we wont update all values and do single save task at the end
+        if (is_array($configName))
         {
-            foreach ($config_name as $key => $value)
+            foreach ($configName as $key => $value)
             {
-                $this->get_xml_entity($key)->value = $value;
+                $this->getXmlEntity($key)->value = $value;
             }
         }
         else
         {
-            $this->get_xml_entity($config_name)->value = $config_value;
+            $this->getXmlEntity($configName)->value = $configValue;
         }
         $this->config->asXML($this->path);
     }
@@ -141,8 +141,8 @@ class Xml
         if (self::$instance == null)
         {
             //make new istance of this class and save it to field for next usage
-            $c = __class__;
-            self::$instance = new $c($sheet);
+            $newClass = __class__;
+            self::$instance = new $newClass($sheet);
         }
 
         return self::$instance;
